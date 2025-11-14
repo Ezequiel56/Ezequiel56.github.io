@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Comprar Silla de Ruedas (Interfaz Estática)</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            padding: 50px; 
+            background-color: #f4f4f9; 
+        }
+        .product-card { 
+            background: white; 
+            padding: 30px; 
+            border-radius: 10px; 
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+            width: 350px; 
+            text-align: center; 
+        }
+        h2 { 
+            color: #333; 
+        }
+        .product-image-container { 
+            margin-bottom: 20px; 
+        }
+        .product-image { 
+            max-width: 100%; 
+            height: auto; 
+            border-radius: 5px; 
+            border: 1px solid #eee; 
+        }
+        .price { 
+            font-size: 2em; 
+            color: #4CAF50; 
+            margin: 10px 0; 
+            font-weight: bold; 
+        }
+        
+        /* Modificación: Usamos una clase fija para el stock "bajo" o "disponible" */
+        .stock-disponible { 
+            font-size: 1.2em; 
+            margin-bottom: 20px; 
+            color: #28a745; /* Verde para disponible */
+        }
+        .stock-bajo { 
+            font-size: 1.2em; 
+            margin-bottom: 20px; 
+            color: #dc3545; /* Rojo para stock bajo */
+        }
+        .stock-agotado {
+            font-size: 1.2em; 
+            margin-bottom: 20px; 
+            color: #dc3545; /* Rojo para agotado */
+        }
+
+        button { 
+            padding: 10px 20px; 
+            background-color: #007BFF; 
+            color: white; 
+            border: none; 
+            border-radius: 5px; 
+            font-size: 1.1em; 
+            cursor: pointer; 
+            transition: background-color 0.3s;
+        }
+        button:hover:not(:disabled) { 
+            background-color: #0056b3; 
+        }
+        button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+
+        .mensaje { 
+            margin-top: 15px; 
+            padding: 10px; 
+            border-radius: 5px; 
+            color: white; 
+            font-weight: bold; 
+        }
+        .success { 
+            background-color: #28a745; 
+        }
+        .error { 
+            background-color: #dc3545; 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="product-card">
+        <h2>Silla de Ruedas</h2>
+
+        <div class="product-image-container">
+            <img 
+                src="silla_de_ruedas.webp" 
+                alt="Imagen de Silla de Ruedas"
+                class="product-image"
+            >
+            </div>
+
+        <p class="price">$500.000 ARS</p>
+
+        <p class="stock-bajo">
+            Cantidad Disponible: 
+            <strong>3</strong> 
+            (¡Stock Bajo!)
+        </p>
+        
+        <form method="POST">
+            <button type="submit" name="comprar">
+                Comprar Ahora
+            </button>
+            </form>
+
+        <div class="mensaje success">¡Compra realizada con éxito! Stock actualizado.</div>
+        
+        <p style="margin-top: 20px;"><a href="tienda_dt.html">Volver</a></p>
+    </div>
+
+</body>
+</html>

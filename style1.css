@@ -1,0 +1,14 @@
+body{
+  background-image: url(probando.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+    display: flex;
+}
+
+    .contenedor{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+}
+

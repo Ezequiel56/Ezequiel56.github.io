@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Página web con letras marcadas</title>
+    <link rel="stylesheet" href="estilosjuegos1.css">
+    <style>
+        /* Estilo para resaltar las letras marcadas */
+        .marcado {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+<div class="contenedor-divs">
+    <div id="div1" class="visible">
+         <h1 class="h1">Encuentra las letras diferentes</h1>
+    <h1 id="miTexto">
+            <span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>q</span><span>p</span>
+            <span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>q</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span>
+            <span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>q</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span>
+            <span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span>
+            <span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span>
+            <span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span>
+            <span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span>
+            <span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>q</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>q</span><span>p</span><span>p</span><span>p</span>
+            <span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span>
+        </h1>
+
+        <div class="contenedor-botones">
+            <button class="boton" onclick="cambiarDiv()">Anterior</button>
+            <h3 class="h3"> Nivel 1</h3>
+            <button class="boton" onclick="cambiarDiv()">Siguiente</button>
+        </div>
+    </div>
+
+    <div id="div2" class="oculto">
+    <h1 class="h1">Encuentra las letras diferentes</h1>
+        <h1 id="miTexto2">
+            <!-- Envolver cada letra en un span para poder seleccionarlas individualmente -->
+            <span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>q</span><span>p</span>
+            <span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>q</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span>
+            <span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>q</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span>
+            <span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span>
+            <span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span>
+            <span>p</span><span>p</span><span>q</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span>
+            <span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span>
+            <span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>q</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>q</span><span>p</span><span>p</span><span>p</span>
+            <span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span><span>p</span>
+        </h1>
+
+        <div class="contenedor-botones">
+            <button class="boton" onclick="cambiarDiv()">Anterior</button>
+            <h3>Nivel 2</h3>
+            <button class="boton" onclick="cambiarDiv()">Siguiente</button>
+        </div>
+      </div>
+
+      <div id="div3" class="oculto">
+      <h1 class="h1">Encuentra las letras diferentes</h1>
+        <h1 id="miTexto3">
+              <!-- Envolver cada letra en un span para poder seleccionarlas individualmente -->
+              <span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span>                                                                        
+              <span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>ɘ</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>ɘ</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span> 
+              <span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>ɘ</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>ɘ</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span> 
+              <span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span> 
+              <span>e</span><span>ɘ</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span> 
+              <span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>ɘ</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span> 
+              <span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>ɘ</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>ɘ</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span> 
+              <span>e</span><span>e</span><span>e</span><span>ɘ</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span> 
+              <span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span> 
+          </h1>
+  
+          
+          <div class="contenedor-botones">
+            <button class="boton" onclick="cambiarDiv()">Anterior</button>
+            <h3>Nivel 3</h3>
+            <button class="boton" onclick="cambiarDiv()">Siguiente</button>
+        </div>
+      </div>
+
+      <div id="div4" class="oculto">
+      <h1 class="h1">Encuentra las letras diferentes</h1>
+        <h1 id="miTexto4">
+              <!-- Envolver cada letra en un span para poder seleccionarlas individualmente -->
+              <span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span> 
+              <span>e</span><span>e</span><span>e</span><span>ɘ</span><span>e</span><span>e</span><span>e</span><span>e</span><span>ɘ</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span> 
+              <span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>ɘ</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>ɘ</span><span>e</span><span>e</span> 
+              <span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span> 
+              <span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span> 
+              <span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span> 
+              <span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>ɘ</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span> 
+              <span>e</span><span>e</span><span>e</span><span>ɘ</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>ɘ</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span> 
+              <span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span><span>e</span> 
+          </h1>
+  
+          
+          <div class="contenedor-botones">
+            <button class="boton" onclick="cambiarDiv()">Anterior</button>
+            <h3>Nivel 4</h3>
+            <button class="boton" onclick="cambiarDiv()">Siguiente</button>
+        </div>
+      </div>
+    </div>
+    
+   
+
+    <script src="juegos.js"></script>
+</body>
+</html>

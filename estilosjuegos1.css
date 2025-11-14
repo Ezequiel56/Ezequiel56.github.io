@@ -1,0 +1,43 @@
+*{font-family: 'Raleway', sans-serif;}
+body {background-color:#000000;}
+
+.contenedor-divs{
+    background-color: #87cefa;
+    padding: 10px;
+    margin: 50px;
+    width: 624px;
+    height: 500px;
+    position: relative;
+    left: 285px;
+    border-radius: 10px;
+    
+}
+.h1{
+    color: whitesmoke;
+}
+.h3{
+    margin-left: 30px;
+}
+
+
+.contenedor-botones {
+    display: flex;
+    gap: 50px; /* Espacio entre los botones */
+    position: absolute;
+  }
+
+.boton{
+    border-radius: 5px;
+    height: 30px;
+    width: 100px;
+    margin-left: 80px;
+}
+
+
+.visible {
+    display: block;
+}
+
+.oculto {
+    display: none;
+}  

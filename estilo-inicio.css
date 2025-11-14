@@ -1,0 +1,139 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'poppins', sans-serif;;
+    }
+    
+    body {
+        background-color: rgb(133, 102, 252);
+        
+    }
+    /*margen pagina */
+    header{
+        background-image: url(fondo-inicio.png);
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 92vh;
+        display: flex;
+        align-items: center;
+    
+    }
+    
+    
+    /*tamaño pagina */
+    
+    .container{
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+    
+    .menu {
+        position: fixed;
+        background-color: rgb(133, 102, 252);  
+        /*mover lugar del menu */
+        top: 0px;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 2000;
+    }
+    
+    .menu .logo{
+         /* */
+        font-weight: 4000;
+        font-size: 20px;
+        color: aliceblue;
+    
+    }
+    
+    .menu .navbar ul li{
+        position: relative;
+        float: left;
+    }
+    
+    .menu .navbar ul li a {
+        font-size: 18px;
+        padding: 15px;
+        color: rgb(255, 255, 255);
+        display: block;
+    }
+    
+    /* color del menu*/
+    .menu .navbar ul li a:hover{
+        color: rgb(230, 85, 28)
+         
+    }
+    
+    #menu {
+        display: none;
+    }
+    
+    #menu-icono{
+        width: 25px;
+    
+    }
+    
+    .menu label{
+        cursor: pointer;
+        display: none;
+    
+    }
+    
+    .header-content{
+        display: flex;
+    }
+    
+    .content{
+        padding: 150px 150px 0px 0px;
+    
+    }
+    
+    .content h1{
+        color: rgb(255, 255, 255);
+        font-size: 55px;
+        text-transform: uppercase;
+        font-weight: 500;
+        line-height: 55px;
+    
+    }
+    
+    .content p{
+        margin-top: 45px;
+        color: black;
+        text-transform: uppercase;
+        font-size: 10px;
+        line-height: 10px;
+    }
+    
+    .btn-1{
+        display: inline-block;
+        background-color: rgba(0, 5, 61, 0.3);
+        border: 1px solid #000000;
+        margin: 15px 10px 0px 0px;
+        padding: 5px 20px;
+        color: #ffffff;
+        border-radius: 10px ;
+    
+    
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+

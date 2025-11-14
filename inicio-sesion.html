@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión Profesional</title>
+    <style>
+        /* 1. Reset y Tipografía Profesional */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #f0f2f5; /* Fondo gris muy claro, neutro */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            color: #333;
+        }
+
+        /* 2. Contenedor Principal (Tarjeta) */
+        .login-box {
+            background: #ffffff; /* Blanco puro */
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra suave y profesional */
+            width: 350px;
+            text-align: center;
+            border-top: 5px solid #007bff; /* Línea de acento azul superior */
+        }
+
+        /* 3. Título y Branding */
+        h2 {
+            margin-bottom: 30px;
+            color: #1c1e21; /* Negro oscuro para el texto principal */
+            font-size: 1.8em;
+            font-weight: 600; /* Seminegrita */
+        }
+        
+        /* 4. Inputs y Etiquetas */
+        .input-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 6px;
+            color: #606770; /* Gris sutil para la etiqueta */
+            font-size: 0.9em;
+            font-weight: 500;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 12px;
+            background-color: #f7f7f7; /* Fondo de input ligeramente gris */
+            border: 1px solid #ddd; /* Borde gris muy claro */
+            border-radius: 6px;
+            box-sizing: border-box;
+            color: #333;
+            font-size: 1em;
+            transition: border-color 0.3s;
+        }
+
+        .input-group input:focus {
+            outline: none;
+            border-color: #007bff; /* Borde de foco azul profesional */
+            background-color: #fff;
+            box-shadow: 0 0 0 1px #007bff;
+        }
+        
+        /* 5. Botón Principal (Llamada a la Acción) */
+        .login-btn {
+            display: inline-block;
+            width: 100%;
+            padding: 14px 15px;
+            background-color: #007bff; /* Azul corporativo */
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1.1em;
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.1s;
+            margin-top: 10px;
+        }
+
+        .login-btn:hover {
+            background-color: #0056b3;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        /* 6. Enlaces Secundarios */
+        .secondary-link {
+            display: block;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #007bff;
+            text-decoration: none;
+        }
+        .secondary-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-box">
+        <h2>Acceso a la Plataforma</h2>
+        
+        <div class="input-group">
+            <label for="usuario">Usuario o Email</label>
+            <input type="text" id="usuario" name="usuario" placeholder="name@empresa.com">
+        </div>
+
+        <div class="input-group">
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" name="password" placeholder="••••••••">
+        </div>
+
+        <a href="inicio.html" class="login-btn">
+            Iniciar Sesión
+        </a>
+        
+      
+        <a href="registro.html" class="secondary-link" style="margin-top: 10px;">Crear una cuenta nueva</a>
+    </div>
+
+</body>
+</html>

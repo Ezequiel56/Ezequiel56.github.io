@@ -1,0 +1,209 @@
+/* slider *//* slider *//* slider *//* slider *//* slider *//* slider *//* slider *//* slider *//* slider *//* slider *//* slider */
+	
+.slider {
+    position: relative;
+    height: 800px;
+    width: 100vw;
+    margin: 0;
+    overflow: hidden;
+}
+
+.slider .textos {
+  text-align: left;
+  padding: 60px;
+  width: 100%;
+   color: #fff;
+   position: absolute;
+    top: 50%;
+    margin-top: -52px;
+}
+
+.slider .textos .nombre {
+  font-family: "Rambla", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  width: 100%;
+}
+
+.slider .textos .descripcion {
+    font-size: 50px;
+    font-weight: 300;
+     width: 100%;
+}
+
+
+.slider .list{
+    position: absolute;
+    width: max-content;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    transition: 1s;
+}
+.slider .list img{
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+}
+.slider .buttons{
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.slider .buttons button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff5;
+    color: #fff;
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+}
+.slider .dots{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: #fff;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.slider .dots li{
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.slider .dots li.active{
+    width: 30px;
+}
+@media screen and (max-width: 768px){
+    .slider{
+        height: 400px;
+    }
+}
+
+
+
+.galeriaproducto .ph {
+    background: url('../img/textura.PNG');
+    width: 100%;
+    padding: 40px;
+  }
+  
+  
+  .galeriaproducto .ph .bebidas,
+  .galeriaproducto .ph .snacks,
+  .galeriaproducto .ph .polirubro,
+  .galeriaproducto .ph .ferreteria,
+  .galeriaproducto .ph .chocolate,
+  .galeriaproducto .ph .quesos,
+  .galeriaproducto .ph .embutidos,
+  .galeriaproducto .ph .leche,
+  .galeriaproducto .ph .snacks,
+  .galeriaproducto .ph .shampoo{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 30px;
+    
+  }
+  
+  .galeriaproducto .ph .bebidas    .foto,
+  .galeriaproducto .ph .snacks         .foto,
+  .galeriaproducto .ph .polirubro .foto,
+  .galeriaproducto .ph .ferreteria       .foto,
+  .galeriaproducto .ph .chocolate   .foto,
+  .galeriaproducto .ph .quesos      .foto,
+  .galeriaproducto .ph .embutidos   .foto,
+  .galeriaproducto .ph .leche       .foto,
+  .galeriaproducto .ph .snacks      .foto,
+  .galeriaproducto .ph .shampoo     .foto{
+    width: 16%;
+    margin-bottom: 20px;
+  }
+  
+  .galeriaproducto .ph .bebidas    .foto img,
+  .galeriaproducto .ph .snacks         .foto img,
+  .galeriaproducto .ph .polirubro .foto img,
+  .galeriaproducto .ph .ferreteria       .foto img,
+  .galeriaproducto .ph .chocolate   .foto img,
+  .galeriaproducto .ph .quesos      .foto img,
+  .galeriaproducto .ph .embutidos   .foto img,
+  .galeriaproducto .ph .leche       .foto img,
+  .galeriaproducto .ph .snacks      .foto img,
+  .galeriaproducto .ph .shampoo     .foto img{
+    width: 100%;
+    vertical-align: top;
+    border-radius: 3px;
+    opacity: 1;
+    
+  }
+  
+  .galeriaproducto .ph .bebidas    .foto img:hover,
+  .galeriaproducto .ph .snacks         .foto img:hover,
+  .galeriaproducto .ph .polirubro .foto img:hover,
+  .galeriaproducto .ph .ferreteria       .foto img:hover,
+  .galeriaproducto .ph .chocolate   .foto img:hover,
+  .galeriaproducto .ph .quesos      .foto img:hover,
+  .galeriaproducto .ph .embutidos   .foto img:hover,
+  .galeriaproducto .ph .leche       .foto img:hover,
+  .galeriaproducto .ph .snacks      .foto img:hover,
+  .galeriaproducto .ph .shampoo     .foto img:hover{
+    opacity: 0.9;
+  }
+  
+  .galeriaproducto .ph .bebidas     h2,
+  .galeriaproducto .ph .snacks          h2,
+  .galeriaproducto .ph .polirubro  h2,
+  .galeriaproducto .ph .ferreteria        h2,
+  .galeriaproducto .ph .chocolate    h2,
+  .galeriaproducto .ph .quesos       h2,
+  .galeriaproducto .ph .embutidos    h2,
+  .galeriaproducto .ph .leche        h2,
+  .galeriaproducto .ph .snacks       h2,
+  .galeriaproducto .ph .shampoo      h2{
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    
+  }
+  
+  .foto img:hover{
+    transform: scale(2);
+    border: 4px solid rgb(0, 0, 0);
+    
+}
+        
+.foto {
+  height: 90%;
+  
+}
+
+.foto img{
+  
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transition:800ms;
+}
+
+.Precio {
+ text-align: center;
+ font-style: italic;
+ font-size: 25px;
+ font-weight: bold;
+ 
+}
